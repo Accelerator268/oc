@@ -1,0 +1,65 @@
+execve("./program1", ["./program1"], ["SHELL=/bin/bash", "SESSION_MANAGER=local/dima-KLVF-"..., "QT_ACCESSIBILITY=1", "COLORTERM=truecolor", "XDG_CONFIG_DIRS=/etc/xdg/xdg-ubu"..., "SSH_AGENT_LAUNCHER=gnome-keyring", "XDG_MENU_PREFIX=gnome-", "GNOME_DESKTOP_SESSION_ID=this-is"..., "LC_ADDRESS=ru_RU.UTF-8", "GNOME_SHELL_SESSION_MODE=ubuntu", "LC_NAME=ru_RU.UTF-8", "SSH_AUTH_SOCK=/run/user/1000/key"..., "XMODIFIERS=@im=ibus", "DESKTOP_SESSION=ubuntu", "LC_MONETARY=ru_RU.UTF-8", "GTK_MODULES=gail:atk-bridge", "PWD=/home/dima/oc/lab4", "LOGNAME=dima", "XDG_SESSION_DESKTOP=ubuntu", "XDG_SESSION_TYPE=wayland", "SYSTEMD_EXEC_PID=1907", "XAUTHORITY=/run/user/1000/.mutte"..., "HOME=/home/dima", "USERNAME=dima", "IM_CONFIG_PHASE=1", "LC_PAPER=ru_RU.UTF-8", "LANG=en_US.UTF-8", "LS_COLORS=rs=0:di=01;34:ln=01;36"..., "XDG_CURRENT_DESKTOP=ubuntu:GNOME", "VTE_VERSION=6800", "WAYLAND_DISPLAY=wayland-0", "GNOME_TERMINAL_SCREEN=/org/gnome"..., "GNOME_SETUP_DISPLAY=:1", "LESSCLOSE=/usr/bin/lesspipe %s %"..., "XDG_SESSION_CLASS=user", "TERM=xterm-256color", "LC_IDENTIFICATION=ru_RU.UTF-8", "LESSOPEN=| /usr/bin/lesspipe %s", "USER=dima", "GNOME_TERMINAL_SERVICE=:1.197", "DISPLAY=:0", "SHLVL=1", "LC_TELEPHONE=ru_RU.UTF-8", "QT_IM_MODULE=ibus", "LC_MEASUREMENT=ru_RU.UTF-8", "XDG_RUNTIME_DIR=/run/user/1000", "LC_TIME=ru_RU.UTF-8", "XDG_DATA_DIRS=/usr/share/ubuntu:"..., "PATH=/home/dima/.local/bin:/usr/"..., "GDMSESSION=ubuntu", "DBUS_SESSION_BUS_ADDRESS=unix:pa"..., "LC_NUMERIC=ru_RU.UTF-8", "OLDPWD=/home/dima/oc", "_=/usr/bin/strace"]) = 0
+brk(NULL)                               = 0x5823e5c4c000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc6d2b7d60) = -1 EINVAL (Invalid argument)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ab79c3ab000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_dev=makedev(0x103, 0x8), st_ino=1704392, st_mode=S_IFREG|0644, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=120, st_size=58428, st_atime=1765354638 /* 2025-12-10T11:17:18.797615161+0300 */, st_atime_nsec=797615161, st_mtime=1765354638 /* 2025-12-10T11:17:18.745614418+0300 */, st_mtime_nsec=745614418, st_ctime=1765354638 /* 2025-12-10T11:17:18.748614461+0300 */, st_ctime_nsec=748614461}, AT_EMPTY_PATH) = 0
+mmap(NULL, 58428, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ab79c39c000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_dev=makedev(0x103, 0x8), st_ino=133239, st_mode=S_IFREG|0644, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=1840, st_size=940560, st_atime=1765353930 /* 2025-12-10T11:05:30.859000179+0300 */, st_atime_nsec=859000179, st_mtime=1758122768 /* 2025-09-17T18:26:08+0300 */, st_mtime_nsec=0, st_ctime=1762246996 /* 2025-11-04T12:03:16.473341543+0300 */, st_ctime_nsec=473341543}, AT_EMPTY_PATH) = 0
+mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ab79c2b5000
+mmap(0x7ab79c2c3000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7ab79c2c3000
+mmap(0x7ab79c33f000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x7ab79c33f000
+mmap(0x7ab79c39a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000) = 0x7ab79c39a000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0O{\f\225\\=\201\327\312\301P\32$\230\266\235"..., 68, 896) = 68
+newfstatat(3, "", {st_dev=makedev(0x103, 0x8), st_ino=133233, st_mode=S_IFREG|0755, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=4344, st_size=2220400, st_atime=1765353930 /* 2025-12-10T11:05:30.750000173+0300 */, st_atime_nsec=750000173, st_mtime=1758122768 /* 2025-09-17T18:26:08+0300 */, st_mtime_nsec=0, st_ctime=1762246996 /* 2025-11-04T12:03:16.473341543+0300 */, st_ctime_nsec=473341543}, AT_EMPTY_PATH) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ab79c000000
+mprotect(0x7ab79c028000, 2023424, PROT_NONE) = 0
+mmap(0x7ab79c028000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7ab79c028000
+mmap(0x7ab79c1bd000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7ab79c1bd000
+mmap(0x7ab79c216000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7ab79c216000
+mmap(0x7ab79c21c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ab79c21c000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ab79c2b2000
+arch_prctl(ARCH_SET_FS, 0x7ab79c2b2740) = 0
+set_tid_address(0x7ab79c2b2a10)         = 24468
+set_robust_list(0x7ab79c2b2a20, 24)     = 0
+rseq(0x7ab79c2b30e0, 0x20, 0, 0x53053053) = 0
+mprotect(0x7ab79c216000, 16384, PROT_READ) = 0
+mprotect(0x7ab79c39a000, 4096, PROT_READ) = 0
+mprotect(0x5823c7587000, 4096, PROT_READ) = 0
+mprotect(0x7ab79c3e5000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x7ab79c39c000, 58428)           = 0
+newfstatat(1, "", {st_dev=makedev(0, 0x19), st_ino=3, st_mode=S_IFCHR|0620, st_nlink=1, st_uid=1000, st_gid=5, st_blksize=1024, st_blocks=0, st_rdev=makedev(0x88, 0), st_atime=1765368565 /* 2025-12-10T15:09:25+0300 */, st_atime_nsec=0, st_mtime=1765368565 /* 2025-12-10T15:09:25+0300 */, st_mtime_nsec=0, st_ctime=1765367525 /* 2025-12-10T14:52:05.042322038+0300 */, st_ctime_nsec=42322038}, AT_EMPTY_PATH) = 0
+getrandom("\xb2\x57\x47\x87\xf2\x67\xe1\x37", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x5823e5c4c000
+brk(0x5823e5c6d000)                     = 0x5823e5c6d000
+write(1, "\320\237\321\200\320\276\320\263\321\200\320\260\320\274\320\274\320\260 1: \321\201\321\202\320\260\321\202\320\270"..., 66) = 66
+write(1, "\320\224\320\276\321\201\321\202\321\203\320\277\320\275\321\213\320\265 \320\272\320\276\320\274\320\260\320\275\320\264\321"..., 35) = 35
+write(1, "1 A B e - \320\262\321\213\321\207\320\270\321\201\320\273\320\270\321\202\321\214 \320\270\320"..., 96) = 96
+write(1, "2 K - \320\262\321\213\321\207\320\270\321\201\320\273\320\270\321\202\321\214 \321\207\320\270\321\201\320"..., 68) = 68
+write(1, "q - \320\262\321\213\321\205\320\276\320\264\n", 15) = 15
+write(1, "\n", 1)                       = 1
+newfstatat(0, "", {st_dev=makedev(0, 0x19), st_ino=3, st_mode=S_IFCHR|0620, st_nlink=1, st_uid=1000, st_gid=5, st_blksize=1024, st_blocks=0, st_rdev=makedev(0x88, 0), st_atime=1765368565 /* 2025-12-10T15:09:25+0300 */, st_atime_nsec=0, st_mtime=1765368565 /* 2025-12-10T15:09:25+0300 */, st_mtime_nsec=0, st_ctime=1765367525 /* 2025-12-10T14:52:05.042322038+0300 */, st_ctime_nsec=42322038}, AT_EMPTY_PATH) = 0
+write(1, "\320\222\320\262\320\265\320\264\320\270\321\202\320\265 \320\272\320\276\320\274\320\260\320\275\320\264\321\203: ", 31) = 31
+read(0, "2 1000\n", 1024)               = 7
+write(1, "\320\240\320\265\320\267\321\203\320\273\321\214\321\202\320\260\321\202: 3.140593\n", 29) = 29
+write(1, "\n", 1)                       = 1
+write(1, "\320\222\320\262\320\265\320\264\320\270\321\202\320\265 \320\272\320\276\320\274\320\260\320\275\320\264\321\203: ", 31) = 31
+read(0, "1 0 3.14 0.001\n", 1024)       = 15
+write(1, "\320\240\320\265\320\267\321\203\320\273\321\214\321\202\320\260\321\202: 1.999997\n", 29) = 29
+write(1, "\n", 1)                       = 1
+write(1, "\320\222\320\262\320\265\320\264\320\270\321\202\320\265 \320\272\320\276\320\274\320\260\320\275\320\264\321\203: ", 31) = 31
+read(0, "q\n", 1024)                    = 2
+exit_group(0)                           = ?
++++ exited with 0 +++
