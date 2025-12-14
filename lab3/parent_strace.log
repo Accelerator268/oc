@@ -1,0 +1,235 @@
+22702 14:46:53.029376 execve("./parent", ["./parent", "input.txt"], 0x7ffd71fe83d8 /* 54 vars */) = 0
+22702 14:46:53.029726 brk(NULL)         = 0x60c596ae2000
+22702 14:46:53.029774 arch_prctl(0x3001 /* ARCH_??? */, 0x7fff97c0aae0) = -1 EINVAL (Invalid argument)
+22702 14:46:53.029897 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7feee821f000
+22702 14:46:53.029992 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+22702 14:46:53.030062 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+22702 14:46:53.030110 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=58428, ...}, AT_EMPTY_PATH) = 0
+22702 14:46:53.034243 mmap(NULL, 58428, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7feee8210000
+22702 14:46:53.034308 close(3)          = 0
+22702 14:46:53.034370 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+22702 14:46:53.034427 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\320!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340\177\2\0\0\0\0\0\340\177\2\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\200\2\0\0\0\0\0\0\200\2\0\0\0\0\0"..., 832) = 832
+22702 14:46:53.034482 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340\177\2\0\0\0\0\0\340\177\2\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\200\2\0\0\0\0\0\0\200\2\0\0\0\0\0\0\200\2\0\0\0\0\0\301C\31\0\0\0\0\0\301C\31\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\320\33\0\0\0\0\0\0\320\33\0\0\0\0\0\0\320\33\0\0\0\0\0"..., 784, 64) = 784
+22702 14:46:53.034533 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+22702 14:46:53.034582 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0O{\f\225\\=\201\327\312\301P\32$\230\266\235\35\202\277\347\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+22702 14:46:53.034643 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+22702 14:46:53.034698 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340\177\2\0\0\0\0\0\340\177\2\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\200\2\0\0\0\0\0\0\200\2\0\0\0\0\0\0\200\2\0\0\0\0\0\301C\31\0\0\0\0\0\301C\31\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\320\33\0\0\0\0\0\0\320\33\0\0\0\0\0\0\320\33\0\0\0\0\0"..., 784, 64) = 784
+22702 14:46:53.034748 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7feee7e00000
+22702 14:46:53.034800 mprotect(0x7feee7e28000, 2023424, PROT_NONE) = 0
+22702 14:46:53.034858 mmap(0x7feee7e28000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7feee7e28000
+22702 14:46:53.034917 mmap(0x7feee7fbd000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7feee7fbd000
+22702 14:46:53.034976 mmap(0x7feee8016000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7feee8016000
+22702 14:46:53.035040 mmap(0x7feee801c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7feee801c000
+22702 14:46:53.035108 close(3)          = 0
+22702 14:46:53.035169 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7feee820d000
+22702 14:46:53.035231 arch_prctl(ARCH_SET_FS, 0x7feee820d740) = 0
+22702 14:46:53.035275 set_tid_address(0x7feee820da10) = 22702
+22702 14:46:53.035334 set_robust_list(0x7feee820da20, 24) = 0
+22702 14:46:53.035374 rseq(0x7feee820e0e0, 0x20, 0, 0x53053053) = 0
+22702 14:46:53.035474 mprotect(0x7feee8016000, 16384, PROT_READ) = 0
+22702 14:46:53.035532 mprotect(0x60c58284c000, 4096, PROT_READ) = 0
+22702 14:46:53.035584 mprotect(0x7feee8259000, 8192, PROT_READ) = 0
+22702 14:46:53.035657 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+22702 14:46:53.035718 munmap(0x7feee8210000, 58428) = 0
+22702 14:46:53.035795 access("input.txt", F_OK) = 0
+22702 14:46:53.035849 openat(AT_FDCWD, "/dev/shm/child_parent_shm", O_RDWR|O_CREAT|O_NOFOLLOW|O_CLOEXEC, 0666) = 3
+22702 14:46:53.035918 ftruncate(3, 4104) = 0
+22702 14:46:53.035961 mmap(NULL, 4104, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7feee821d000
+22702 14:46:53.036026 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7feee820da10) = 22703
+22702 14:46:53.036173 getpid()          = 22702
+22703 14:46:53.036229 set_robust_list(0x7feee820da20, 24 <unfinished ...>
+22702 14:46:53.036243 newfstatat(1, "",  <unfinished ...>
+22703 14:46:53.036261 <... set_robust_list resumed>) = 0
+22702 14:46:53.036275 <... newfstatat resumed>{st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+22702 14:46:53.036304 getrandom( <unfinished ...>
+22703 14:46:53.036316 close(3 <unfinished ...>
+22702 14:46:53.036328 <... getrandom resumed>"\xcb\x9d\x4e\x73\x0b\xc0\x43\xea", 8, GRND_NONBLOCK) = 8
+22703 14:46:53.036345 <... close resumed>) = 0
+22702 14:46:53.036358 brk(NULL <unfinished ...>
+22703 14:46:53.036370 execve("./child", ["child"], 0x7fff97c0acc0 /* 54 vars */ <unfinished ...>
+22702 14:46:53.036394 <... brk resumed>) = 0x60c596ae2000
+22702 14:46:53.036420 brk(0x60c596b03000) = 0x60c596b03000
+22702 14:46:53.036480 write(1, "\320\240\320\276\320\264\320\270\321\202\320\265\320\273\321\214\321\201\320\272\320\270\320\271 \320\277\321\200\320\276\321\206\320\265\321\201\321\201 (PID: 22702) \320\267\320\260\320\277\321\203\321\201\321\202\320\270\320\273 \320\264\320\276\321\207\320\265\321\200\320\275\320\270\320\271 (PID: 22703)\n", 100) = 100
+22702 14:46:53.036597 wait4(22703, 0x7fff97c0aa44, WNOHANG, NULL) = 0
+22703 14:46:53.036658 <... execve resumed>) = 0
+22702 14:46:53.036673 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000},  <unfinished ...>
+22703 14:46:53.036770 brk(NULL)         = 0x581b8bc99000
+22703 14:46:53.036883 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc98df4d80) = -1 EINVAL (Invalid argument)
+22703 14:46:53.037017 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7c9268e70000
+22703 14:46:53.037133 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+22703 14:46:53.037201 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+22703 14:46:53.037250 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=58428, ...}, AT_EMPTY_PATH) = 0
+22703 14:46:53.037295 mmap(NULL, 58428, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7c9268e61000
+22703 14:46:53.037336 close(3)          = 0
+22703 14:46:53.037377 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+22703 14:46:53.037421 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\320!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340\177\2\0\0\0\0\0\340\177\2\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\200\2\0\0\0\0\0\0\200\2\0\0\0\0\0"..., 832) = 832
+22703 14:46:53.037465 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340\177\2\0\0\0\0\0\340\177\2\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\200\2\0\0\0\0\0\0\200\2\0\0\0\0\0\0\200\2\0\0\0\0\0\301C\31\0\0\0\0\0\301C\31\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\320\33\0\0\0\0\0\0\320\33\0\0\0\0\0\0\320\33\0\0\0\0\0"..., 784, 64) = 784
+22703 14:46:53.037516 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+22703 14:46:53.037556 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0O{\f\225\\=\201\327\312\301P\32$\230\266\235\35\202\277\347\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+22703 14:46:53.037597 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+22703 14:46:53.037648 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340\177\2\0\0\0\0\0\340\177\2\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\200\2\0\0\0\0\0\0\200\2\0\0\0\0\0\0\200\2\0\0\0\0\0\301C\31\0\0\0\0\0\301C\31\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\320\33\0\0\0\0\0\0\320\33\0\0\0\0\0\0\320\33\0\0\0\0\0"..., 784, 64) = 784
+22703 14:46:53.037689 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7c9268c00000
+22703 14:46:53.037729 mprotect(0x7c9268c28000, 2023424, PROT_NONE) = 0
+22703 14:46:53.037771 mmap(0x7c9268c28000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7c9268c28000
+22703 14:46:53.037814 mmap(0x7c9268dbd000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7c9268dbd000
+22703 14:46:53.037862 mmap(0x7c9268e16000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7c9268e16000
+22703 14:46:53.037908 mmap(0x7c9268e1c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7c9268e1c000
+22703 14:46:53.037958 close(3)          = 0
+22703 14:46:53.038000 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7c9268e5e000
+22703 14:46:53.038047 arch_prctl(ARCH_SET_FS, 0x7c9268e5e740) = 0
+22703 14:46:53.038079 set_tid_address(0x7c9268e5ea10) = 22703
+22703 14:46:53.038111 set_robust_list(0x7c9268e5ea20, 24) = 0
+22703 14:46:53.038143 rseq(0x7c9268e5f0e0, 0x20, 0, 0x53053053) = 0
+22703 14:46:53.038219 mprotect(0x7c9268e16000, 16384, PROT_READ) = 0
+22703 14:46:53.038264 mprotect(0x581b73337000, 4096, PROT_READ) = 0
+22703 14:46:53.038308 mprotect(0x7c9268eaa000, 8192, PROT_READ) = 0
+22703 14:46:53.038359 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+22703 14:46:53.038408 munmap(0x7c9268e61000, 58428) = 0
+22703 14:46:53.038472 openat(AT_FDCWD, "/dev/shm/child_parent_shm", O_RDWR|O_NOFOLLOW|O_CLOEXEC) = 3
+22703 14:46:53.038515 mmap(NULL, 4104, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7c9268e6e000
+22703 14:46:53.038560 getrandom("\x0b\xa2\x2d\xd8\xe9\xc0\x86\xe7", 8, GRND_NONBLOCK) = 8
+22703 14:46:53.038599 brk(NULL)         = 0x581b8bc99000
+22703 14:46:53.038640 brk(0x581b8bcba000) = 0x581b8bcba000
+22703 14:46:53.038702 openat(AT_FDCWD, "input.txt", O_RDONLY) = 4
+22703 14:46:53.038751 newfstatat(4, "", {st_mode=S_IFREG|0664, st_size=81, ...}, AT_EMPTY_PATH) = 0
+22703 14:46:53.038803 read(4, "     \n5.5 15.5 25.5\n\n100 300\n100.5 100\n\321\202\320\265\320\272\321\201\321\202 \320\261\320\265\320\267 \321\207\320\270\321\201\320\265\320\273\n1 2 3 jhdgf 4", 4096) = 81
+22703 14:46:53.038888 read(4, "", 4096) = 0
+22703 14:46:53.038927 close(4)          = 0
+22703 14:46:53.038964 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000}, NULL) = 0
+22703 14:46:53.089397 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000},  <unfinished ...>
+22702 14:46:53.136914 <... clock_nanosleep resumed>NULL) = 0
+22702 14:46:53.137187 wait4(22703, 0x7fff97c0aa44, WNOHANG, NULL) = 0
+22702 14:46:53.137517 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000},  <unfinished ...>
+22703 14:46:53.139755 <... clock_nanosleep resumed>NULL) = 0
+22703 14:46:53.140040 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000}, NULL) = 0
+22703 14:46:53.190682 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000},  <unfinished ...>
+22702 14:46:53.238046 <... clock_nanosleep resumed>NULL) = 0
+22702 14:46:53.238399 wait4(22703, 0x7fff97c0aa44, WNOHANG, NULL) = 0
+22702 14:46:53.238847 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000},  <unfinished ...>
+22703 14:46:53.241586 <... clock_nanosleep resumed>NULL) = 0
+22703 14:46:53.241962 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000}, NULL) = 0
+22703 14:46:53.292729 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000},  <unfinished ...>
+22702 14:46:53.339181 <... clock_nanosleep resumed>NULL) = 0
+22702 14:46:53.339389 wait4(22703, 0x7fff97c0aa44, WNOHANG, NULL) = 0
+22702 14:46:53.339689 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000},  <unfinished ...>
+22703 14:46:53.343211 <... clock_nanosleep resumed>NULL) = 0
+22703 14:46:53.343467 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000}, NULL) = 0
+22703 14:46:53.394042 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000},  <unfinished ...>
+22702 14:46:53.440173 <... clock_nanosleep resumed>NULL) = 0
+22702 14:46:53.440341 wait4(22703, 0x7fff97c0aa44, WNOHANG, NULL) = 0
+22702 14:46:53.440443 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000},  <unfinished ...>
+22703 14:46:53.444586 <... clock_nanosleep resumed>NULL) = 0
+22703 14:46:53.444984 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000}, NULL) = 0
+22703 14:46:53.496012 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000},  <unfinished ...>
+22702 14:46:53.540746 <... clock_nanosleep resumed>NULL) = 0
+22702 14:46:53.541054 wait4(22703, 0x7fff97c0aa44, WNOHANG, NULL) = 0
+22702 14:46:53.541391 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000},  <unfinished ...>
+22703 14:46:53.546705 <... clock_nanosleep resumed>NULL) = 0
+22703 14:46:53.547360 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000}, NULL) = 0
+22703 14:46:53.598321 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000},  <unfinished ...>
+22702 14:46:53.641960 <... clock_nanosleep resumed>NULL) = 0
+22702 14:46:53.642233 wait4(22703, 0x7fff97c0aa44, WNOHANG, NULL) = 0
+22702 14:46:53.642338 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000},  <unfinished ...>
+22703 14:46:53.648931 <... clock_nanosleep resumed>NULL) = 0
+22703 14:46:53.649230 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000}, NULL) = 0
+22703 14:46:53.699777 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000},  <unfinished ...>
+22702 14:46:53.742862 <... clock_nanosleep resumed>NULL) = 0
+22702 14:46:53.743199 wait4(22703, 0x7fff97c0aa44, WNOHANG, NULL) = 0
+22702 14:46:53.743356 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000},  <unfinished ...>
+22703 14:46:53.750227 <... clock_nanosleep resumed>NULL) = 0
+22703 14:46:53.750589 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000}, NULL) = 0
+22703 14:46:53.801352 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000},  <unfinished ...>
+22702 14:46:53.843800 <... clock_nanosleep resumed>NULL) = 0
+22702 14:46:53.844067 wait4(22703, 0x7fff97c0aa44, WNOHANG, NULL) = 0
+22702 14:46:53.844374 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000},  <unfinished ...>
+22703 14:46:53.851785 <... clock_nanosleep resumed>NULL) = 0
+22703 14:46:53.852068 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000}, NULL) = 0
+22703 14:46:53.902724 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000},  <unfinished ...>
+22702 14:46:53.944707 <... clock_nanosleep resumed>NULL) = 0
+22702 14:46:53.944956 wait4(22703, 0x7fff97c0aa44, WNOHANG, NULL) = 0
+22702 14:46:53.945234 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000},  <unfinished ...>
+22703 14:46:53.953143 <... clock_nanosleep resumed>NULL) = 0
+22703 14:46:53.953377 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000}, NULL) = 0
+22703 14:46:54.003953 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000},  <unfinished ...>
+22702 14:46:54.045786 <... clock_nanosleep resumed>NULL) = 0
+22702 14:46:54.046303 wait4(22703, 0x7fff97c0aa44, WNOHANG, NULL) = 0
+22702 14:46:54.047033 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000},  <unfinished ...>
+22703 14:46:54.054310 <... clock_nanosleep resumed>NULL) = 0
+22703 14:46:54.054552 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000}, NULL) = 0
+22703 14:46:54.105085 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000},  <unfinished ...>
+22702 14:46:54.147537 <... clock_nanosleep resumed>NULL) = 0
+22702 14:46:54.148041 wait4(22703, 0x7fff97c0aa44, WNOHANG, NULL) = 0
+22702 14:46:54.148642 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000},  <unfinished ...>
+22703 14:46:54.155650 <... clock_nanosleep resumed>NULL) = 0
+22703 14:46:54.156202 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000}, NULL) = 0
+22703 14:46:54.206937 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000},  <unfinished ...>
+22702 14:46:54.249247 <... clock_nanosleep resumed>NULL) = 0
+22702 14:46:54.249580 wait4(22703, 0x7fff97c0aa44, WNOHANG, NULL) = 0
+22702 14:46:54.250030 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000},  <unfinished ...>
+22703 14:46:54.257338 <... clock_nanosleep resumed>NULL) = 0
+22703 14:46:54.257674 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000}, NULL) = 0
+22703 14:46:54.308458 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000},  <unfinished ...>
+22702 14:46:54.350502 <... clock_nanosleep resumed>NULL) = 0
+22702 14:46:54.350934 wait4(22703, 0x7fff97c0aa44, WNOHANG, NULL) = 0
+22702 14:46:54.353243 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000},  <unfinished ...>
+22703 14:46:54.358860 <... clock_nanosleep resumed>NULL) = 0
+22703 14:46:54.359065 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000}, NULL) = 0
+22703 14:46:54.409415 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000},  <unfinished ...>
+22702 14:46:54.453581 <... clock_nanosleep resumed>NULL) = 0
+22702 14:46:54.454145 wait4(22703, 0x7fff97c0aa44, WNOHANG, NULL) = 0
+22702 14:46:54.454545 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000},  <unfinished ...>
+22703 14:46:54.459789 <... clock_nanosleep resumed>NULL) = 0
+22703 14:46:54.460074 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000}, NULL) = 0
+22703 14:46:54.511262 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000},  <unfinished ...>
+22702 14:46:54.555122 <... clock_nanosleep resumed>NULL) = 0
+22702 14:46:54.555385 wait4(22703, 0x7fff97c0aa44, WNOHANG, NULL) = 0
+22702 14:46:54.555656 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000},  <unfinished ...>
+22703 14:46:54.561948 <... clock_nanosleep resumed>NULL) = 0
+22703 14:46:54.562290 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000}, NULL) = 0
+22703 14:46:54.613334 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000},  <unfinished ...>
+22702 14:46:54.656125 <... clock_nanosleep resumed>NULL) = 0
+22702 14:46:54.656398 wait4(22703, 0x7fff97c0aa44, WNOHANG, NULL) = 0
+22702 14:46:54.656717 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000},  <unfinished ...>
+22703 14:46:54.664084 <... clock_nanosleep resumed>NULL) = 0
+22703 14:46:54.664408 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000}, NULL) = 0
+22703 14:46:54.714914 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000},  <unfinished ...>
+22702 14:46:54.757166 <... clock_nanosleep resumed>NULL) = 0
+22702 14:46:54.757458 wait4(22703, 0x7fff97c0aa44, WNOHANG, NULL) = 0
+22702 14:46:54.757754 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000},  <unfinished ...>
+22703 14:46:54.765332 <... clock_nanosleep resumed>NULL) = 0
+22703 14:46:54.765504 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000}, NULL) = 0
+22703 14:46:54.816105 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000},  <unfinished ...>
+22702 14:46:54.858196 <... clock_nanosleep resumed>NULL) = 0
+22702 14:46:54.858491 wait4(22703, 0x7fff97c0aa44, WNOHANG, NULL) = 0
+22702 14:46:54.858904 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000},  <unfinished ...>
+22703 14:46:54.866692 <... clock_nanosleep resumed>NULL) = 0
+22703 14:46:54.867208 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000}, NULL) = 0
+22703 14:46:54.918201 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000},  <unfinished ...>
+22702 14:46:54.959431 <... clock_nanosleep resumed>NULL) = 0
+22702 14:46:54.959700 wait4(22703, 0x7fff97c0aa44, WNOHANG, NULL) = 0
+22702 14:46:54.960002 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000},  <unfinished ...>
+22703 14:46:54.968744 <... clock_nanosleep resumed>NULL) = 0
+22703 14:46:54.969137 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000}, NULL) = 0
+22703 14:46:55.019818 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=50000000},  <unfinished ...>
+22702 14:46:55.060341 <... clock_nanosleep resumed>NULL) = 0
+22702 14:46:55.060538 wait4(22703, 0x7fff97c0aa44, WNOHANG, NULL) = 0
+22702 14:46:55.060838 write(1, "\320\236\320\266\320\270\320\264\320\260\320\275\320\270\320\265 \320\264\320\260\320\275\320\275\321\213\321\205 \320\276\321\202 \320\264\320\276\321\207\320\265\321\200\320\275\320\265\320\263\320\276 \320\277\321\200\320\276\321\206\320\265\321\201\321\201\320\260...\n", 74) = 74
+22702 14:46:55.061101 write(1, "\n", 1) = 1
+22702 14:46:55.061317 write(1, "\320\240\320\265\320\267\321\203\320\273\321\214\321\202\320\260\321\202\321\213 \320\276\320\261\321\200\320\260\320\261\320\276\321\202\320\272\320\270 \321\204\320\260\320\271\320\273\320\260 'input.txt'\n", 63) = 63
+22702 14:46:55.061403 write(1, "\320\235\320\265 \320\275\320\260\320\271\320\264\320\265\320\275\320\276 \321\207\320\270\321\201\320\265\320\273 \320\262 \321\201\321\202\321\200\320\276\320\272\320\265:      \n\320\241\321\203\320\274\320\274\320\260: 46.50 (\320\270\320\267 3 \321\207\320\270\321\201\320\265\320\273) \320\264\320\273\321\217 \321\201\321\202\321\200\320\276\320\272\320\270: 5.5 15.5 25.5\n\320\241\321\203\320\274\320\274\320\260: 400.00 (\320\270\320\267 2 \321\207\320\270\321\201\320\265\320\273) \320\264\320\273\321\217 \321\201\321\202\321\200\320\276\320\272\320\270: 100 300\n\320\241\321\203\320\274\320\274\320\260: 200.50 (\320\270\320\267 2 \321\207\320\270\321\201\320\265\320\273) \320\264\320\273\321\217 \321\201\321\202\321\200\320\276\320\272\320\270: 1"..., 415) = 415
+22702 14:46:55.061567 write(1, "\n", 1) = 1
+22702 14:46:55.061716 wait4(22703,  <unfinished ...>
+22703 14:46:55.070405 <... clock_nanosleep resumed>NULL) = 0
+22703 14:46:55.070659 munmap(0x7c9268e6e000, 4104) = 0
+22703 14:46:55.071028 close(3)          = 0
+22703 14:46:55.071180 exit_group(0)     = ?
+22703 14:46:55.071561 +++ exited with 0 +++
+22702 14:46:55.071696 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 22703
+22702 14:46:55.071859 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=22703, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+22702 14:46:55.072003 write(1, "\320\224\320\276\321\207\320\265\321\200\320\275\320\270\320\271 \320\277\321\200\320\276\321\206\320\265\321\201\321\201 \320\267\320\260\320\262\320\265\321\200\321\210\320\270\320\273\321\201\321\217 \321\201 \320\272\320\276\320\264\320\276\320\274: 0\n", 70) = 70
+22702 14:46:55.072178 munmap(0x7feee821d000, 4104) = 0
+22702 14:46:55.072313 close(3)          = 0
+22702 14:46:55.072409 unlink("/dev/shm/child_parent_shm") = 0
+22702 14:46:55.072573 write(1, "\320\240\320\276\320\264\320\270\321\202\320\265\320\273\321\214\321\201\320\272\320\270\320\271 \320\277\321\200\320\276\321\206\320\265\321\201\321\201 \320\267\320\260\320\262\320\265\321\200\321\210\320\265\320\275.\n", 58) = 58
+22702 14:46:55.072743 exit_group(0)     = ?
+22702 14:46:55.073012 +++ exited with 0 +++
