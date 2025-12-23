@@ -1,0 +1,35 @@
+max_concurrent: 3
+
+mutexes:
+  - db_access
+  - file_lock
+
+job1:
+  command: "echo 'Job 1: Start' && sleep 2 && echo 'Job 1: Done'"
+  dependencies: []
+  mutexes: [db_access]
+
+job2:
+  command: "echo 'Job 2: Start' && sleep 1 && echo 'Job 2: Done'"
+  dependencies: []
+  mutexes: [file_lock]
+
+job3:
+  command: "echo 'Job 3: Start' && sleep 3 && echo 'Job 3: Done'"
+  dependencies: []
+  mutexes: []
+
+job4:
+  command: "echo 'Job 4: Start' && sleep 2 && echo 'Job 4: Done'"
+  dependencies: [job1, job2]
+  mutexes: [db_access]
+
+job5:
+  command: "echo 'Job 5: Start' && sleep 1 && echo 'Job 5: Done'"
+  dependencies: [job3]
+  mutexes: [file_lock]
+
+job6:
+  command: "echo 'Job 6: Start' && sleep 2 && echo 'Job 6: Final Done!'"
+  dependencies: [job4, job5]
+  mutexes: []
